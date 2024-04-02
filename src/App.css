@@ -1,0 +1,39 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root {
+  --w-split-bar-shadow: #A890D3;
+}
+
+.toolbar, .left-sidebar, .right-sidebar, .main-content, .bottom-panel {
+  padding: 10px;
+  background-color: #000000; /* Updated background color */
+}
+
+.toolbar {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.content-area {
+  display: flex;
+  flex: 1; /* Take up all available space */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.left-sidebar, .right-sidebar {
+  overflow: auto;
+}
+
+.main-content {
+  overflow: auto;
+  flex: 1; /* Take up remaining space */
+}
+
+.bottom-panel {
+  overflow: auto;
+  min-height: 20vh;
+}
+
